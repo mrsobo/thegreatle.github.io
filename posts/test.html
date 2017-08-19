@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title> Testpad | Huy's Blog</title>
+        <title>An h1 header | Huy's Blog</title>
         <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html;"><meta name=viewport content="initial-scale=1.0 maximum-scale=1.0">
         
@@ -20,39 +20,122 @@
         </div>
         <div class="container">
             <div class="main">
-                <h1 id="testpad">Testpad</h1>
-<div class="cover" style="background-image:url(
-![](https://cdn-images-1.medium.com/max/2000/0*9wd9vKupguT_EN7W.)
-"></div><div class="cover-holder"></div>
-
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Giải pháp</th>
-<th>Load cấu trúc HTML</th>
-<th>Load xong toàn bộ trang</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">express.static</td>
-<td>6 giây</td>
-<td>8 giây</td>
-</tr>
-<tr>
-<td style="text-align:left">nginx</td>
-<td>3 giây</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="an-h1-header">An h1 header</h1>
+<p>Paragraphs are separated by a blank line.</p>
+<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+look like:</p>
+<ul>
+<li>this one</li>
+<li>that one</li>
+<li>the other one</li>
+</ul>
+<p>Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.</p>
+<blockquote>
+<p>Block quotes are
+written like so.</p>
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote>
+<p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., &quot;it&#39;s all
+in chapters 12--14&quot;). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺</p>
+<h2 id="an-h2-header">An h2 header</h2>
+<p>Here&#39;s a numbered list:</p>
+<ol>
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ol>
+<p>Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here&#39;s a code sample:</p>
+<pre><code># Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }
+</code></pre><p>As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:</p>
+<pre><code>define foobar() {
+    print &quot;Welcome to flavor country!&quot;;
+}
+</code></pre><p>(which makes copying &amp; pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:</p>
+<pre><code class="lang-python">import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+</code></pre>
+<h3 id="an-h3-header">An h3 header</h3>
+<p>Now a nested list:</p>
+<ol>
+<li><p>First, get these ingredients:</p>
+<ul>
+<li>carrots</li>
+<li>celery</li>
+<li>lentils</li>
+</ul>
+</li>
+<li><p>Boil some water.</p>
+</li>
+<li><p>Dump everything in the pot and follow
+this algorithm:</p>
+<pre><code>find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)
+</code></pre><p>Do not bump wooden spoon or it will fall.</p>
+</li>
+</ol>
+<p>Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).</p>
+<p>Here&#39;s a link to <a href="http://foo.bar">a website</a>, to a <a href="local-doc.html">local
+doc</a>, and to a <a href="#an-h2-header">section heading in the current
+doc</a>. Here&#39;s a footnote [^1].</p>
+<p>[^1]: Footnote text goes here.</p>
+<p>Tables can look like this:</p>
+<p>size  material      color</p>
 <hr>
-<p>Some math $a$ here</p>
-<div class="cover">
-<img src="https://cdn-images-1.medium.com/max/2000/1*mQSgNS5VCTs3XsR-h0qg_Q.png" alt="">
-</div>
-<div class="cover-holder"></div>
-
-<p>$ \begin{align} A &amp; = B \\ &amp; = C \end{align} $</p>
+<p>9     leather       brown
+10    hemp canvas   natural
+11    glass         transparent</p>
+<p>Table: Shoes, their sizes, and what they&#39;re made of</p>
+<p>(The above is the caption for the table.) Pandoc also supports
+multi-line tables:</p>
+<hr>
+<p>keyword   text</p>
+<hr>
+<p>red       Sunsets, apples, and
+          other red or reddish
+          things.</p>
+<p>green     Leaves, grass, frogs
+          and other things it&#39;s
+          not easy being.</p>
+<hr>
+<p>A horizontal rule follows.</p>
+<hr>
+<p>Here&#39;s a definition list:</p>
+<p>apples
+  : Good for making applesauce.
+oranges
+  : Citrus!
+tomatoes
+  : There&#39;s no &quot;e&quot; in tomatoe.</p>
+<p>Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)</p>
+<p>Here&#39;s a &quot;line block&quot;:</p>
+<p>| Line one
+|   Line too
+| Line tree</p>
+<p>and images can be specified like so:</p>
+<p><img src="example-image.jpg" alt="example image" title="An exemplary image"></p>
+<p>Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:</p>
+<p>$I = \int \rho R^{2} dV$</p>
+<p>And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
 
                 <div class="copyright">
                 Bạn được tùy ý bấm like, trích dẫn hoặc copy, post lại, nhưng vui lòng ghi rõ nguồn và tác giả và không làm thay đổi nội dung bài viết. Nếu không làm vậy, mình hy vọng từ nay về sau bạn sẽ luôn cảm thấy cắn rứt lương tâm, ăn không ngon, ngủ không yên. 😆
@@ -111,7 +194,7 @@
           let provider = new firebase.auth.GoogleAuthProvider();
           let auth = firebase.auth();
           let currentUser = null;
-          let postCommentURL = 'posts/test-pad/comments';
+          let postCommentURL = 'posts/test/comments';
 
           auth.onAuthStateChanged(function(user) {
             document.getElementById("comment-loading").style.display = "none";
