@@ -61,20 +61,19 @@
           }
         });
         </script>
-        <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
-        <script>
-          // Initialize Firebase
-          var config = {
-    		apiKey: "AIzaSyAlmm2LQC_tHUpq4yO0fmNnzuycCzVekXE",
-    		authDomain: "comment-d2307.firebaseapp.com",
-    		databaseURL: "https://comment-d2307.firebaseio.com",
-    		projectId: "comment-d2307",
-    		storageBucket: "",
-    		messagingSenderId: "657194997467"
-
-          };
-          firebase.initializeApp(config);
-        </script>
+     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyAlmm2LQC_tHUpq4yO0fmNnzuycCzVekXE",
+		    authDomain: "comment-d2307.firebaseapp.com",
+		    databaseURL: "https://comment-d2307.firebaseio.com",
+		    projectId: "comment-d2307",
+		    storageBucket: "comment-d2307.appspot.com",
+		    messagingSenderId: "657194997467"
+		  };
+		  firebase.initializeApp(config);
+		</script>
         <script>
           let provider = new firebase.auth.GoogleAuthProvider();
           let auth = firebase.auth();
